@@ -1,0 +1,71 @@
+
+{% extends 'nav.html' %}
+
+{% block  content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spicy Item</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'spice.css' %}" >
+</head>
+<body>
+    <div id="wrapper">
+    	<div class="card_group">
+    		<div  class="card">
+    			<div class="card_image">
+					<img src="{% static 'pasta.jpg' %}" >
+    				
+                </div>
+    			<div class="card_content">
+    				<h4>Pasta</h4>
+    				<p style="color: orange;">
+    					Pasta in 500 ml = 100 Tk</br>
+                        Pasta in 1000 ml = 200 Tk
+    				</p>
+    			</div>
+    			<div class="card_buttons">
+    				<a href="Spicy_Food/">Order Now</a>
+					<a href="Calculates/">Calculator</a>
+    			</div>
+    		</div>
+    		<div  class="card">
+    			<div class="card_image">
+				<img src="{% static 'hal.jpg' %}" >
+    				
+
+                </div>
+    			<div class="card_content">
+    				<h4>Halim</h4>
+    				<p style="color: red;">
+    					Per kg = 480 tk.</br>
+    				</p>
+    			</div>
+    			<div class="card_buttons">
+    				<a href="Spicy_Food/">Order Now</a>
+					<a href="Calculates/">Calculator</a>
+    			</div>
+    		</div>
+    		<div  class="card">
+    			<div class="card_image">
+				<img src="{% static 'bb.jpg' %}" >
+    				
+                </div>
+    			<div class="card_content">
+    				<h4>Biryani</h4>
+    				<p style="color: yellow;">
+    					Per Plate = 160 tk.
+    				</p>
+    			</div>
+    			<div class="card_buttons">
+    				<a href="Spicy_Food/">Order Now</a>
+					<a href="Calculates/">Calculator</a>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+</body>
+</html>
+
+{% endblock  %}

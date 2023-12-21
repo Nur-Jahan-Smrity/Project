@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html> 
+  <head>    
+    <title>REGISTRATION FORM</title>
+    
+    
+    <link rel="stylesheet" href="{% static 'register1.css' %}" type="text/css">
+      <style>
+      body{
+            background-image: url( {% static 'food7.jpg' %});
+            
+      }
+    </style>
+     
+
+  </head>
+  <body>
+ <form method="POST" action="{% url 'register' %}">    
+       {% csrf_token %}
+    <div class="center">
+      <table align="center" cellpadding="10">
+      
+
+      
+            <tr><td><h1>Register Here</h1></td></tr>
+           
+             <tr>
+                  <td><b>User Name</b><br/></td> 
+                  <td> <input placeholder="Enter User Name" required type="text"  Name="username"/><br/></td>
+            </tr>
+            
+            <tr>
+                  <td> <b>Email</b><br/></td>
+                  <td><input placeholder="Enter Email" type="email" required Name="email"/><br/></td>
+            </tr>
+            <tr>
+                  <td><b>Password</b><br/></td>
+                  <td><input placeholder="Enter Pass." type="password" required Name="password" requierd onchange="form.RePassword.pattern=this.value" /><br/></td>
+            </tr>
+           <!-- <tr>
+                  <td><b>Re-enter Password</b><br/></td>
+                  <td><input placeholder="Re-enter Pass." type="password" Name="RePassword"/><br/></td>
+            </tr>-->
+            
+            <tr>
+                  <td align="center" colspan="5">
+                   <input type="submit" name="submit" value="Register">
+                  
+                  <!--<button type="submit" value="Registration">Registration</button>-->
+                   <button>
+                   <a href="{% url 'loginform' %}" style="font-weight: bold; font-size: 15px">Login Here</a></button>
+                  </td> 
+                    
+            </tr> 
+
+      </table>
+      
+      </dib>
+      <div class="msg">
+      {% if messages %}
+      {% for msg in messages%}
+      <h3>{{msg}}</h3>
+      {%endfor%}
+      {%endif%}
+      </div>
+      
+
+       </form>
+  </body>
+</html>

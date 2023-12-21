@@ -1,0 +1,279 @@
+
+{% extends 'nav.html' %}
+
+{% block  content %}
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet"  href="{% static 'assets/css/styles.css' %}" >
+         
+
+        <title>Memory's Food Eden And Beauty Glaze.</title>
+        
+    </head>
+    <body>
+
+    
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title"> Memory's Food Eden</h1>
+                        <h2 class="home__subtitle">Make Your Stomach <br>HAPPY! </h2>
+                        <a href="food/" class="button">View</a>
+                    </div>
+    
+                    <img src="{% static 'cake.jpeg' %}"  alt="" class="home__img">
+                </div>
+            </section>
+
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+
+                <img src="{% static 'assets/img/b1.png' %}"  alt="" class="home__img">
+                    <div class="home__data">
+                        <h1 class="home__title"> Memory's Beauty Glaze</h1>
+                        <h2 class="home__subtitle">Enjoy your Shopping! </h2>
+                        <a href="beauty/" class="button">View</a>
+                    </div>
+    
+                    
+                </div>
+            </section>
+            
+            <!--========== ABOUT ==========-->
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <span class="section-subtitle about__initial">About us</span>
+                        <h2 class="section-title about__initial">We provide best products
+                         and Cook the best tasty food</h2>
+                        <p class="about__description">We deal with homemade healthy food.
+                         Luscious test, perfect blend of health & test.</p>
+                             <p>Eat well live will.
+                            Make your stomach HAPPY!<br>
+                            Side by side we deals with girls accessories. Provides you girls accessories
+                            that well help you to look stunning and grogeous.</p><br>
+                        <a href="About/" class="button">Explore history</a>
+                    </div>
+
+                    <img src="{% static 'a1.jpeg' %}" alt="" class="about__img">
+                </div>
+            </section>
+
+            <!--========== SERVICES ==========-->
+            <section class="services section bd-container" id="services">
+                <span class="section-subtitle">services</span>
+                <h2 class="section-title">Our amazing services</h2>
+
+                <div class="services__container  bd-grid">
+                    <div class="services__content">
+                        
+                        <h3 class="services__title">Excellent products</h3>
+                        <p class="services__description">We offer our clients excellent quality services for many years, with the best products in the city.</p>
+                    </div>
+
+                    <div class="services__content">
+                        
+                        <h3 class="services__title">Excellent food</h3>
+                        <p class="services__description">We offer our clients excellent quality services for many years, with the best food in the city.</p>
+                    </div>
+
+                    <div class="services__content">
+                        
+                        <h3 class="services__title">Delivery</h3>
+                        <p class="services__description">We offer our clients excellent quality services for many years, with the best products in the city.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== Special Food MENU ==========-->
+            <section class="menu section bd-container" id="menu">
+                <span class="section-subtitle">Special</span>
+                <h2 class="section-title">Menu of the week</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="{% static 'assets/img/21.jpeg' %}" alt="" class="menu__img">
+                        <h3 class="menu__name">Vanilla Cake</h3>
+                        <span class="menu__detail">Delicious dish</span>
+                        <span class="menu__preci">1 pound = BDT 550 </span>
+                        <a href="food" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="{% static 'plate2.png' %}"  alt="" class="menu__img">
+                        <h3 class="menu__name">Biryani</h3>
+                        <span class="menu__detail">Delicious dish</span>
+                        <span class="menu__preci">Per Plate = BDT 160</span>
+                        <a href="food/" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="{% static 'spo.jpeg' %}"  alt="" class="menu__img">
+                        <h3 class="menu__name">Sponge Mishti</h3>
+                        <span class="menu__detail">Delicious dish</span>
+                        <span class="menu__preci">1 kg = BDT 400</span>
+                        <a href="food/" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== Special Food MENU ==========-->
+            <section class="menu section bd-container" id="menu">
+                <span class="section-subtitle">Special</span>
+                <h2 class="section-title">Menu of the week</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="{% static 'assets/img/r1.jpg' %}" alt="" class="menu__img">
+                        <h3 class="menu__name">Rose Purple Lip Gloss</h3>
+                        <span class="menu__detail">Brand :	Kleancolor</span>
+                        <span class="menu__detail">Finish Type :	Matte</span>
+                        <span class="menu__detail">Item Form :	Liquid</span>
+                        
+
+
+
+                        <span class="menu__preci">BDT 550</span>
+                        <a href="beauty" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="{% static 'assets/img/b2.jpg' %}" alt="" class="menu__img">
+                        <h3 class="menu__name">BEAUTY BLENDER EGG BOX</h3>
+                        <span class="menu__detail"> each boxes contains 8 latex-free, 
+                        super soft beauty blenders </span>
+                        <span class="menu__preci">BDT 600</span>
+                        <a href="beauty/" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img  src="{% static 'assets/img/b3.jpg' %}" alt="" class="menu__img">
+                        <h3 class="menu__name">SCARF </h3>
+                        <span class="menu__detail">THE HANKIE</span>
+                        <span class="menu__detail">Material:	Cotton</span>
+                        <span class="menu__detail">Thickness:	Medium</span>
+                        <span class="menu__detail">Style:	Plain Dyed</span>
+                        <span class="menu__preci">BDT 150</span>
+                        <a href="beauty/" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                </div>
+            </section>
+
+          
+            <!--========== CONTACT US ==========-->
+            <section class="contact section bd-container" id="contact">
+                <div class="contact__container bd-grid">
+                    <div class="contact__data">
+                        <span class="section-subtitle contact__initial">Let's talk</span>
+                        <h2 class="section-title contact__initial">Contact us</h2>
+                        <p class="contact__description">If you have any queries send us or
+                         contact us this.</p>
+                    </div>
+
+                    <div class="contact__button">
+                        <a href="Contact_us/" class="button">Contact us now</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--========== SERVICES ==========-->
+            <section class="services section bd-container" id="services">
+                <span class="section-subtitle">Customer feedback</span>
+                
+                <div class="services__container  bd-grid">
+                    <div class="services__content">
+                    
+                        <h3 class="services__title">Shafika Afrin</h3>
+                        <p class="services__description">Memorys kitchen cake is smooth &
+                         so delicious..dessert with all kind of food are yammi..</p>
+                    </div>
+
+                    <div class="services__content">
+       
+                        <h3 class="services__title">Farhana Turny</h3>
+                        <p class="services__description">I ordered cake for my sister's birthday. It was soo good and delicious. 😋
+                         Thanks a lot memories kitchen❣️ I am satisfied for this amazing cake. 😍
+
+Previous</p>
+                    </div>
+
+                    <div class="services__content">
+                        
+                        <h3 class="services__title">Arifur Rahman Mamun</h3>
+                        <p class="services__description">অনেক ধন্যবাদ আপ্পি!!! এত অল্প সময়ে ডেলিভারিতে জন্মদিনের কেক টা দেওয়ার জন্য!!! কেকটা খুবই সুস্বাদু!! এক কথায় অসাধারণ!!!</p>
+                    </div>
+                </div>
+            </section>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">Memory's Food Eden And Beauty Glaze.</a>
+                    
+                    <div>
+                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Delivery</a></li>
+                        <li><a href="#" class="footer__link">Pricing</a></li>
+                        <li><a href="#" class="footer__link">Reserve your spot</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Information</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Get Offer</a></li>
+                        <li><a href="#" class="footer__link">Contact us</a></li>
+                        <li><a href="#" class="footer__link">Privacy policy</a></li>
+                        <li><a href="#" class="footer__link">Terms of services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Adress</h3>
+                    <ul>
+                        <li>Halishaher, Chittagong</li>
+                        <li>+00123456789</li>
+                        <li> abc@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2021 SMS. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        {% load static %}
+        
+        <script href="{% static 'assets/js/main.js' %}" ></script>
+        
+        
+    </body>
+</html>
+{% endblock  %}

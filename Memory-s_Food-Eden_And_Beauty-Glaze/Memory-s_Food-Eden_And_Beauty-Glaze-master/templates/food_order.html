@@ -1,0 +1,106 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html> 
+  <head>    
+    <title>Order Form</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'food_order.css' %}"  >
+
+       <style>
+      body{
+            background-image: url( {% static 'fd.jpg' %});
+            
+      }
+    </style>
+  </head>
+<body >
+<form  method="POST">
+       {% csrf_token %}
+
+    <div class="center">
+    <table align="center" cellpadding="10">
+      <tr><td><h1>Order Here</h1></td></tr>
+      <tr>
+            <td><b>Name</b><br/></td> 
+            <td> <input placeholder="Enter your Name" required type="text" Name="Username" /><br/></td>
+      </tr>
+      <tr>
+            <td><b>Phone Number</b><br/></td>
+            <td><input placeholder="Enter Your Phone No." required type="text" Name="PhoneNum"/><br/></td>
+      </tr>
+      <tr>
+            <td> <b>Email</b><br/></td>
+            <td><input placeholder="Enter Email" type="Email" required Name="Email" /><br/></td>
+      </tr>
+       <tr >
+            <td><b>Name of Food</b><br/></td> 
+            <td>
+            <select Name="FoodName" required>
+             <option>Select Food Name</option>
+             <option>Vanilla Cake</option>
+             <option>Strawbery Cake</option>
+             <option>Chocolate Cake</option>
+            
+            </select> <br/>
+            </td>
+      </tr>
+      <tr  >
+            <td><b>Payment</b><br/></td> 
+            <td>
+            <select Name="Payment" required> 
+             <option>Select Payment Method</option>
+             <option>Bkash(01869537592)</option>
+             <option>Rocket(01869537592)</option>
+             <option>Cash On Delivery</option>
+            </select> <br/>
+            </td>
+      </tr>
+      <tr >
+            <td><b>Quantity of food</b><br/></td>
+            <td>
+            <select Name="food_Quantity" required>
+             <option>Select Quantity</option>
+             <option>Half pound</option>
+             <option>1 pound</option>
+             <option>2 pound</option>
+             <option>3 pound</option>
+             <option>4 pound</option>
+             <option>5 pound</option>
+             
+            </select> <br/>
+            </td>
+      </tr>
+      <tr >
+            <td>
+                 <b>Description</b></br>
+                 <td>
+                 <textarea  name="Textarea" placeholder="Description(optional)" cols="22" rows="05" ></textarea></br>
+               </td>
+            </td>    
+      </tr> 
+      <tr>
+            <td align="center" colspan="5">
+
+             <button type="submit" value="Send">Send </button>
+            
+            </td>    
+      </tr> 
+    </table>
+    
+
+     <div class="msg">
+            {% if messages %}
+            {% for msg in messages%}
+            <h3>{{msg}}
+            <button class="btn"><a href="{%url 'home'%}"> Back</a></button></h3>
+            
+            
+            {%endfor%}
+            {%endif%}
+      </div>
+      
+
+       </form>
+
+  </body>
+</html>

@@ -1,0 +1,44 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback Form</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'feed.css' %}" >
+	<script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+</head>
+<body><section></section>
+
+	
+   <div class="container">
+   	  <form method="POST">
+		 {% csrf_token %}
+   	  	 <h1>Give Your Feedback</h1>
+   	  	 <div class="id">
+   	  	     <input type="text" placeholder="User Name" name='Username'>
+   	  	     <i class="far fa-user"></i>
+   	  	 </div>   
+   	  	  <div class="id">
+   	  	     <input type="email" placeholder="Email address" name="Email">
+   	  	     <i class="far fa-envelop"></i>
+   	  	  </div>
+   	  	     <textarea cols="15" rows="5" placeholder="Enter Your Opinions here...." name="Textarea"></textarea><br/>
+   	  	    
+			<button type='submit' value="Send">Send</button></br></br></br>
+			
+
+		{% if messages %}
+      {% for msg in messages%}
+      <h3>{{msg}}</h3>
+      {%endfor%}
+      {%endif%}
+
+	  <a href="{%url 'home'%}"> Back</a>
+   	    
+   	  </form>
+   	
+   </div>
+
+</body>
+</html>

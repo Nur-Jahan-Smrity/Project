@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html> 
+  <head>    
+    <title>REGISTRATION FORM</title>
+    
+    
+    <link rel="stylesheet" href="{% static 'register1.css' %}" type="text/css">
+      <style>
+      body{
+            background-image: url( {% static 'food7.jpg' %});
+            
+      }
+    </style>
+     
+
+  </head>
+  <body>
+ <form method="POST" action="{% url 'register' %}">    
+       {% csrf_token %}
+    <div class="center">
+      <table align="center" cellpadding="10">
+      
+
+      
+            <tr><td><h1>Register Here</h1></td></tr>
+            <tr>
+                  <td><b>First Name</b><br/></td> 
+                  <td> <input placeholder="Enter 1st Name" required type="text" Name="FirstName" /><br/></td>
+            </tr>
+            <tr>
+                  <td><b>Last Name</b><br/></td> 
+                  <td> <input placeholder="Enter last Name" required type="text"  Name="LastName"/><br/></td>
+            </tr>
+             <tr>
+                  <td><b>User Name</b><br/></td> 
+                  <td> <input placeholder="Enter User Name" required type="text"  Name="Username"/><br/></td>
+            </tr>
+            <!--<tr>
+                  <td><b>Phone Number</b><br/></td>
+                  <td><input placeholder="Enter Phone No." type="text" required Name="PhoneNum"/><br/></td>
+            </tr>-->
+            <tr>
+                  <td> <b>Email</b><br/></td>
+                  <td><input placeholder="Enter Email" type="email" required Name="Email"/><br/></td>
+            </tr>
+            <tr>
+                  <td><b>Password</b><br/></td>
+                  <td><input placeholder="Enter Pass." type="password" required Name="Password" requierd onchange="form.RePassword.pattern=this.value" /><br/></td>
+            </tr>
+            <tr>
+                  <td><b>Re-enter Password</b><br/></td>
+                  <td><input placeholder="Re-enter Pass." type="password" Name="RePassword"/><br/></td>
+            </tr>
+            
+            <tr>
+                  <td align="center" colspan="5">
+                  
+                  <button type="submit" value="Registration">Registration</button>
+                 
+                  </td>    
+            </tr> 
+      </table>
+      
+      </dib>
+      <div class="msg">
+      {% if messages %}
+      {% for msg in messages%}
+      <h3>{{msg}}</h3>
+      {%endfor%}
+      {%endif%}
+      </div>
+      
+
+       </form>
+  </body>
+</html>

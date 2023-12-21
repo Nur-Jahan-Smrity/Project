@@ -1,0 +1,102 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'newOrder.css' %}"/>
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Order Form</div>
+    <div class="content">
+    <form  method="POST">
+       {% csrf_token %}
+     
+        <div class="user-details">
+
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" Name="Username"  placeholder="Enter your name" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Quantity of Food</span>
+            <td>
+            <select Name="food_Quantity" required>
+             <option>Select Quantity</option>
+             <option>500 ml</option>
+             <option>1000 ml</option>
+             <option>1 kg</option>
+             <option>2 kg</option>
+             <option>3 kg</option>
+            </select> <br/>
+            </td>
+          </div>
+
+         
+
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" Name="PhoneNum" placeholder="Enter your number" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Name of Food</span>
+            
+             <td>
+            <select Name="FoodName" required>
+             <option>Select Food Name</option>
+             <option>Nowabi Shemai</option>
+             <option>Pastry</option>
+             <option>Yogurt</option>
+            </select>  </td>
+          </div>
+
+           <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" Name="Email"  placeholder="Enter your email" required>
+          </div>
+
+          
+
+          <div class="input-box">
+            <span class="details">Payment Method</span>
+            
+            <td>
+            <select Name="Payment" required>
+             <option>Select Payment Method</option>
+             <option>Bkash(01869537592)</option>
+             <option>Rocket(01869537592)</option>
+             <option>Cash On Delivery</option>
+            </select> </td>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Description</span>
+            <input type="text"  name="Textarea" placeholder="optional">
+          </div>
+        </div>
+        <div class="button">
+        
+          <input type="submit" value="Submit">
+          
+        </div>
+        
+
+<div class="msg">
+            {% if messages %}
+            {% for msg in messages%}
+            <h3>{{msg}}</h3>
+            {%endfor%}
+            {%endif%}
+      </div>
+
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

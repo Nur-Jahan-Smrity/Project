@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:   monospace;
+}
+
+.navbar{
+    background-color: rgb(61, 70, 54);
+    padding: 1% 7%;
+    text-align: center;
+    background-size: cover;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: honeydew;
+    font-size: 1.2rem;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+.img
+{
+    background-image: url("icon1.png");
+}
+.service-section
+{
+    background-color: rgb(49, 53, 46);
+}
+
+p{
+
+    color: #fff;
+    font-size: 20px;
+    font-style: inherit;
+    line-height: 20px;
+    padding: 5px;
+    
+}
+
+.khana
+{
+    padding-left: 10%;
+}
+.card
+{
+   
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1
+{
+    background-image: url(pic-1.png);
+    padding-left: 2%;
+    margin-top: 2%;
+    
+}
+
+.card2
+{
+    background-image: url(pic_2.png);
+    padding-left: 2%;
+    margin-top: 2%;
+}
+
+button{
+    width: 100px;
+    color: #000;
+    font-size: 20px;
+    background : rgb(112, 127, 214);
+    border: 0;
+    border-radius: 20px; 
+    margin: 50px;
+    padding: 10px;
+
+}
+
+button:hover
+{
+    background: midnightblue;
+
+}
+
+.card:hover
+{
+    transform: translateY(-10px);
+
+}
+
+
+h4{
+
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+h5{
+    padding-top: 10%;
+    padding-left: 10px;
+    color: #fff;
+}
+.card p{
+
+    text-shadow: 0 0 15px rgb(65, 35, 35);
+    font-size: 8px;
+}
+
+
+

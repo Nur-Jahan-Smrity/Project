@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	  
+
+    <link rel="stylesheet" href="{% static 'lasttry.css' %}" type="text/css">
+    
+<body>
+<form method="POST">
+{%  csrf_token %}
+	<div class="loginbox">
+		<img src="{% static 'avatar2.jpg' %}" class="avatar2">
+		   <h1>Login Here</h1>
+		   
+		   	  <p>Username</p>
+		   	  <input type="text" placeholder="Enter Username" name="Username">
+		   	  <p>Password</p>
+		   	  <input type="password" placeholder="Enter Password" name="Password">
+		   	  <input  type="submit" name="" value="Login">
+		   	  <a href="/Registration/">Don't have an account?</a>
+		
+
+	</div>
+	   </form>
+</body>
+</head>
+</html>

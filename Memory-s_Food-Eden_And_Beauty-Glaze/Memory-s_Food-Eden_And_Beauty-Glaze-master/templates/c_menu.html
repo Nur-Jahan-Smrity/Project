@@ -1,0 +1,86 @@
+
+{% extends 'nav.html' %}
+
+{% block  content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cake Menu</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'c_menu.css' %}"  >
+	<link rel="stylesheet" type="text/css" href="{% static 'sidebar.css' %}"  >
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<style>
+	body{
+		background-color: gray;
+	}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+	
+    <div id="wrapper">
+    	<div class="card_group">
+    		<div  class="card">
+    			<div class="card_image">
+    				<img src="{% static 'b.jpg' %}" >
+                </div>
+    			<div class="card_content">
+    				<h4>Vanilla Cake</h4>
+    				<p style="color: orange;">
+    					1 pound vanilla flavour cake.
+    					Price vary depending on the size of the cake.<br/>
+    					1 pound cost = 550 tk.
+    				</p>
+    			</div>
+    			<div class="card_buttons">
+    				<a href="Cake_Order/">Order Now</a>
+					<a href="Calculatec/">Calculator</a>
+					
+    			</div>
+    		</div>
+    		<div  class="card">
+    			<div class="card_image">
+				<img src="{% static 'violate.jpg' %}" >
+    				
+                </div>
+    			<div class="card_content">
+    				<h4>Strawberry Cake</h4>
+    				<p style="color: red;">
+    					1 pound strawberry flavour cake.
+    					Price vary depending on the size of the cake.<br/>
+    					1 pound cost = 550 tk.
+    				</p>
+    			</div>
+    			<div class="card_buttons">
+    				<a href="Cake_Order/">Order Now</a>
+					<a href="Calculatec/">Calculator</a>
+    			</div>
+    		</div>
+    		<div  class="card">
+    			<div class="card_image">
+				<img src="{% static 'tr.jpg' %}" >
+    				
+                </div>
+    			<div class="card_content">
+    				<h4>Chocolate Cake</h4>
+    				<p style="color: yellow;">
+    					1 pound chocolate flavour cake.
+    					Price vary depending on the size of the cake.<br/>
+    					1 pound cost = 600 tk.
+    				</p>
+    			</div>
+    			<div class="card_buttons">
+    				<a href="Cake_Order/">Order Now</a>
+					<a href="Calculatec/">Calculator</a>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+	</div>
+</body>
+</html>
+
+{% endblock  %}

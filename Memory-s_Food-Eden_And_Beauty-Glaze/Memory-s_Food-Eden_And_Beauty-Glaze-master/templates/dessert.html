@@ -1,0 +1,73 @@
+
+{% extends 'nav.html' %}
+
+{% block  content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dessert Item</title>
+	<link rel="stylesheet"  href="{% static 'dess.css' %}" type="text/css" >
+</head>
+<body>
+    <div id="wrapper">
+    	<div class="card_group">
+    		<div  class="card">
+    			<div class="card_image">
+    				<img src="{% static 'shemai.jpg' %}" >
+                </div>
+    			<div class="card_content">
+    				<h4>Nowabi Shemai</h4>
+    				<p style="color: orange;">
+    					Nowabi Shemai in 500 ml = 100 Tk</br>
+                        Nowabi Shemai in 1000 ml = 200 Tk
+    				</p>
+    			</div>
+    			<div class="card_buttons">
+    				<a href="Dessert_Order/">Order Now</a>
+					<a href="Calculated/">Calculator</a>
+    			</div>
+    		</div>
+
+    		<div  class="card">
+    			<div class="card_image">
+					<img src="{% static 'pas.jpg' %}" >
+                </div>
+    			<div class="card_content">
+    				<h4>Pastry</h4>
+    				<p style="color: red;">
+    					Per Piece = 40 tk.</br>
+                        Note:Have to order more then 6 piece.
+    				</p>
+    			</div>
+    			<div class="card_buttons">
+    				<a href="Dessert_Order/">Order Now</a>
+					<a href="Calculated/">Calculator</a>
+    			</div>
+    		</div>
+
+    		<div  class="card">
+    			<div class="card_image">
+				<img src="{% static 'd.jpg' %}" >
+    				
+                </div>
+    			<div class="card_content">
+    				<h4>Yogurt</h4>
+    				<p style="color: yellow;">
+    					500 ml (sour yogurt) = 90 tk.</br>
+                        500 ml (sweet yogurt) = 130 tk.</br>
+                        500 ml (sweet yogurt with any flavour) = 150 tk.
+    				</p>
+    			</div>
+    			<div class="card_buttons">
+    				<a href="Dessert_Order/">Order Now</a>
+					<a href="Calculated/">Calculator</a>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+</body>
+</html>
+
+{% endblock  %}
